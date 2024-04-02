@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="take_photo" type="take_photo" name="take_photo" output="screen" />    
+</launch>
