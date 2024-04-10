@@ -311,6 +311,7 @@ void timerCallback0(const ros::TimerEvent& time_e)
         }
         fwrite(pDataForSaveImage[0], 1, stSaveParam.nImageLen, fp);
         fclose(fp);
+        free(pDataForSaveImage[0]);
         image_idx[0]++;
         printf("Camera0 save image succeed\n");
     }
